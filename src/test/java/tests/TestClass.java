@@ -10,7 +10,7 @@ import pages.TopMenuItem;
 public class TestClass extends BaseTest {
 
     @Test
-    public void test001() throws InterruptedException {
+    public void test001Master() throws InterruptedException {
        HomePage hp = new HomePage(getDriver());
        LogInPage logInPage = hp.openTopMenu(TopMenuItem.LOGIN);
        logInPage.tryToFindAnElement();
