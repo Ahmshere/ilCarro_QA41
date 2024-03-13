@@ -21,4 +21,11 @@ public class TestClass extends BaseTest {
 
        Thread.sleep(3000);
     }
+    @Test
+    public void findYourCarBranch2() throws InterruptedException {
+        HomePage hp = new HomePage(getDriver());
+        SearchPage searchPage = hp.openTopMenu(TopMenuItem.SEARCH);
+        searchPage.addCity("Moscow").addDates(5);
+        Thread.sleep(3000);
+    }
 }
