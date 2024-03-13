@@ -7,7 +7,7 @@ import pages.*;
 public class TestClass extends BaseTest {
 
     @Test
-    public void test001() throws InterruptedException {
+    public void test002Branch() throws InterruptedException {
        HomePage hp = new HomePage(getDriver());
        LogInPage logInPage = hp.openTopMenu(TopMenuItem.LOGIN);
        logInPage.tryToFindAnElement();
