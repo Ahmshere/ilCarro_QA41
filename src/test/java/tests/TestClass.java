@@ -2,10 +2,7 @@ package tests;
 
 import config.BaseTest;
 import org.testng.annotations.Test;
-import pages.HomePage;
-import pages.LetTheCarWorkPage;
-import pages.LogInPage;
-import pages.TopMenuItem;
+import pages.*;
 
 public class TestClass extends BaseTest {
 
@@ -17,8 +14,6 @@ public class TestClass extends BaseTest {
        LetTheCarWorkPage lcwp = logInPage.openTopMenu(TopMenuItem.LET_THE_CAR_WORK);
        lcwp.setManufacturer("BMW").addLocation("Montana")
                .setFuelType().photoAttachment("C:\\Pictures\\BlueCar.jpg");
-
-
        Thread.sleep(3000);
     }
     @Test
