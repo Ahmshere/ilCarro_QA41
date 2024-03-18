@@ -16,8 +16,9 @@ public class TestClass extends BaseTest {
                .setFuelType().photoAttachment("C:\\Pictures\\BlueCar.jpg");
        Thread.sleep(3000);
     }
+    // my string
     @Test
-    public void findYourCarBranch2() throws InterruptedException {
+    public void findYourCarBranch22() throws InterruptedException {
         HomePage hp = new HomePage(getDriver());
         SearchPage searchPage = hp.openTopMenu(TopMenuItem.SEARCH);
         searchPage.addCity("Moscow").addDates(5);
